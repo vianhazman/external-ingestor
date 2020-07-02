@@ -53,3 +53,13 @@ sink_settings: {
 - `path`: REST domain path target
 - `client_settings`: settings to configure in used client class
 - `sink_settings`: settings to configure in used sink class
+
+## Running the ingestion job
+Follow the current command format to run the job of your choice
+```
+python main.py --jobname [JOB/YAML NAME] --start_time [START TIME IN EPOCH] --end_time [END TIME IN EPOCH - OPTIONAL]
+```
+For example this is for the Zendesk job
+```
+python main.py --jobname zendesk_ticket --start_time 1591013586
+```
