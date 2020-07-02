@@ -24,7 +24,7 @@ Class responsible for batch sinking the final data format into storage. As a def
 ## Job Configuration Structure
 This job only need a configuration file in '.yaml' extension in **external_ingestor/configs** folder. The config file should be the same as your job name.
 We support environment variables to prevent exposed credentials with this syntax `!ENV ${VARIABLE_NAME}` (credits to : https://medium.com/swlh/python-yaml-configuration-with-environment-variables-parsing-77930f4273ac).
-**Example Job Configuration: Pulling tickets data from Zendesk**
+### Example Job Configuration: Pulling tickets data from Zendesk
 ```
 method: "get_ticket_incremental"
 client: "ZendeskClient"
@@ -45,3 +45,11 @@ sink_settings: {
   "table_name": "zendesk_tickets_test_1"
 }
 ```
+#### Configuration Dictionary
+- `method`: load method used in sink class
+- `transformer`: transformer class used
+- `sink`: sink class used
+- `domain`: REST domain target
+- `path`: REST domain path target
+- `client_settings`: settings to configure in used client class
+- `sink_settings`: settings to configure in used sink class
