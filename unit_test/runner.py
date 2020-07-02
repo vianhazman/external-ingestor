@@ -18,7 +18,7 @@ class RunnerTest(TestCase):
         method = "get_ticket_incremental"
         client_settings = {
             "email" : "vianhazman@gmail.com",
-            "password" : "oHdTQvrQwqXDOLaZohRS9pyK19vMdQOYYIYwA3bR"
+            "password" : "passwordrahasia"
         }
         sink_settings = {
             "user": "postgres",

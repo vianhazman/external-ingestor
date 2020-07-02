@@ -10,7 +10,7 @@ class RestApiClientTest(TestCase):
     def setUp(self):
         self.settings = {
             "email" : "vianhazman@gmail.com",
-            "password" : "oHdTQvrQwqXDOLaZohRS9pyK19vMdQOYYIYwA3bR"
+            "password" : "passwordrahasia"
         }
         self.target_domain = "https://vianhazman.zendesk.com"
         self.target_path = "/api/v2/incremental/tickets.json"
