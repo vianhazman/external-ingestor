@@ -5,6 +5,9 @@ The architecture of this tool is separated into three different modules;
 Client, Transform and Sink. The three modules were implemented on a template design pattern since it imposes structure from pluggable components. The batch processing job is written on a
 '.yaml' configuration file.
 
+The philosophy behind the framework is:
+> Democratizing external data ingestion by enabling self-serve while maintaining robustness and consistency of the system
+
 ## Crafting your desired "Ingestion Burger"
 ![alt text](readme/header.png "Treating data ingestion like a self served burger!")
 #### Client
