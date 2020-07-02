@@ -1,0 +1,18 @@
+method: "get_ticket_incremental"
+client: "ZendeskClient"
+transformer: "ZendeskTransformer"
+sink: "PostgresSink"
+domain: "https://vianhazman.zendesk.com/"
+path: "/api/v2/incremental/tickets.json"
+client_settings: {
+  "email": !ENV '${ZD_EMAIL}',
+  "password": !ENV '${ZD_TOKEN}'
+}
+sink_settings: {
+  "user": "postgres",
+  "pass": !ENV '${PG_PASS}',
+  "port": 5432,
+  "db": "postgres",
+  "host": "localhost",
+  "table_name": "zendesk_tickets_test_1"
+}
