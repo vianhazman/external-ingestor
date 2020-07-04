@@ -66,3 +66,27 @@ For example this is for the Zendesk job
 ```
 python main.py --jobname zendesk_ticket --start_time 1591013586
 ```
+
+## Running the Zendesk Ticket sample run
+
+Follow the current command format to run the Zendesk ticket example run
+
+```
+./test_run_zendesk.sh
+```
+
+Credentials are exported to environment variable to ensure safety. Please export:
+
+```
+export PG_PASS=<YOUR POSTGRES PASSWORD>
+export ZD_EMAIL=<YOUR ZENDESK EMAIL>
+export ZD_TOKEN=<YOUR ZENDESK TOKEN>
+```
+
+## Running the unit test and coverage
+
+Follow the current command format to run the unit test
+
+```
+./run_test.sh
+```
